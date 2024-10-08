@@ -11,120 +11,165 @@
         android:layout_width="412dp"
         android:layout_height="803dp"
         android:scaleType="center"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="+@id/guideline2"
         tools:srcCompat="@tools:sample/avatars" />
 
     <TextView
         android:id="@+id/name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="16dp"
         android:textAppearance="@style/TextAppearance.AppCompat.Display3"
         android:textSize="66sp"
-        tools:layout_editor_absoluteX="532dp"
-        tools:layout_editor_absoluteY="7dp"
+        app:layout_constraintBottom_toTopOf="@+id/emailLabel"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/profile_photo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.242"
         tools:text="Name" />
 
     <TextView
         android:id="@+id/emailLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="184dp"
+        android:layout_marginBottom="52dp"
         android:paddingTop="8dp"
         android:text="@string/email_label"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         android:textSize="34sp"
-        tools:layout_editor_absoluteX="589dp"
-        tools:layout_editor_absoluteY="108dp" />
+        app:layout_constraintBottom_toTopOf="@+id/email"
+        app:layout_constraintStart_toEndOf="@+id/profile_photo" />
 
     <TextView
         android:id="@+id/email"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="72dp"
+        android:layout_marginBottom="44dp"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         android:textSize="48sp"
-        tools:layout_editor_absoluteX="508dp"
-        tools:layout_editor_absoluteY="169dp"
+        app:layout_constraintBottom_toTopOf="@+id/extensionLabel"
+        app:layout_constraintStart_toEndOf="@+id/profile_photo"
         tools:text="Email Address" />
 
     <TextView
         android:id="@+id/extensionLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="152dp"
+        android:layout_marginBottom="32dp"
         android:paddingTop="8dp"
         android:text="@string/extension_label"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         android:textSize="34sp"
-        tools:layout_editor_absoluteX="567dp"
-        tools:layout_editor_absoluteY="271dp" />
+        app:layout_constraintBottom_toTopOf="@+id/extension"
+        app:layout_constraintStart_toEndOf="@+id/profile_photo" />
 
     <TextView
         android:id="@+id/extension"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:layout_marginBottom="48dp"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         android:textSize="48sp"
-        tools:layout_editor_absoluteX="535dp"
-        tools:layout_editor_absoluteY="355dp"
+        app:layout_constraintBottom_toTopOf="@+id/supervisorLabel"
+        app:layout_constraintStart_toEndOf="@+id/profile_photo"
         tools:text="Extension" />
 
     <TextView
         android:id="@+id/departmentLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="120dp"
+        android:layout_marginBottom="72dp"
         android:paddingTop="8dp"
         android:text="@string/department_label"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         android:textSize="34sp"
-        tools:layout_editor_absoluteX="1030dp"
-        tools:layout_editor_absoluteY="16dp" />
+        app:layout_constraintBottom_toTopOf="@+id/department"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
     <TextView
         android:id="@+id/department"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="128dp"
         android:textAppearance="@style/TextAppearance.AppCompat.Display2"
         android:textSize="48sp"
-        tools:layout_editor_absoluteX="917dp"
-        tools:layout_editor_absoluteY="132dp"
+        app:layout_constraintBottom_toTopOf="@+id/directReportsLabel"
+        tools:layout_editor_absoluteX="879dp"
         tools:text="Department name" />
 
     <TextView
         android:id="@+id/supervisorLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="152dp"
+        android:layout_marginBottom="40dp"
         android:paddingTop="8dp"
         android:text="@string/supervisor_label"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         android:textSize="34sp"
-        tools:layout_editor_absoluteX="567dp"
-        tools:layout_editor_absoluteY="501dp" />
+        app:layout_constraintBottom_toTopOf="@+id/supervisor"
+        app:layout_constraintStart_toEndOf="@+id/profile_photo" />
 
     <TextView
         android:id="@+id/supervisor"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginBottom="68dp"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         android:textSize="48sp"
-        tools:layout_editor_absoluteX="441dp"
-        tools:layout_editor_absoluteY="625dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/profile_photo"
         tools:text="Supervisor\'s Name" />
 
     <TextView
         android:id="@+id/directReportsLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="56dp"
         android:paddingTop="8dp"
         android:text="@string/direct_reports"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         android:textSize="34sp"
-        tools:layout_editor_absoluteX="997dp"
-        tools:layout_editor_absoluteY="305dp" />
+        app:layout_constraintBottom_toTopOf="@+id/directReportsRecyclerView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/directReportsRecyclerView"
         android:layout_width="300dp"
         android:layout_height="300dp"
-        tools:layout_editor_absoluteX="917dp"
-        tools:layout_editor_absoluteY="450dp" />
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="56dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.67" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.33" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
