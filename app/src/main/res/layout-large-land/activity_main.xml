@@ -8,54 +8,56 @@
 
     <ImageView
         android:id="@+id/profile_photo"
-        android:layout_width="412dp"
-        android:layout_height="803dp"
+        android:layout_width="424dp"
+        android:layout_height="802dp"
         android:scaleType="center"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="+@id/guideline2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintEnd_toStartOf="+@id/guideline2"
         tools:srcCompat="@tools:sample/avatars" />
 
     <TextView
         android:id="@+id/name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="136dp"
         android:layout_marginTop="16dp"
         android:textAppearance="@style/TextAppearance.AppCompat.Display3"
         android:textSize="66sp"
         app:layout_constraintBottom_toTopOf="@+id/emailLabel"
         app:layout_constraintEnd_toStartOf="@+id/guideline"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/profile_photo"
+        app:layout_constraintStart_toEndOf="@+id/guideline2"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.242"
+        app:layout_constraintVertical_bias="0.363"
         tools:text="Name" />
 
     <TextView
         android:id="@+id/emailLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="184dp"
-        android:layout_marginBottom="52dp"
+        android:layout_marginStart="172dp"
+        android:layout_marginBottom="44dp"
         android:paddingTop="8dp"
         android:text="@string/email_label"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         android:textSize="34sp"
         app:layout_constraintBottom_toTopOf="@+id/email"
-        app:layout_constraintStart_toEndOf="@+id/profile_photo" />
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintHorizontal_bias="0.011"
+        app:layout_constraintStart_toEndOf="@+id/guideline2" />
 
     <TextView
         android:id="@+id/email"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="72dp"
-        android:layout_marginBottom="44dp"
+        android:layout_marginBottom="52dp"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         android:textSize="48sp"
         app:layout_constraintBottom_toTopOf="@+id/extensionLabel"
-        app:layout_constraintStart_toEndOf="@+id/profile_photo"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/guideline2"
         tools:text="Email Address" />
 
     <TextView
@@ -63,24 +65,28 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="152dp"
-        android:layout_marginBottom="32dp"
+        android:layout_marginBottom="24dp"
         android:paddingTop="8dp"
         android:text="@string/extension_label"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         android:textSize="34sp"
         app:layout_constraintBottom_toTopOf="@+id/extension"
-        app:layout_constraintStart_toEndOf="@+id/profile_photo" />
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/guideline2" />
 
     <TextView
         android:id="@+id/extension"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="120dp"
-        android:layout_marginBottom="48dp"
+        android:layout_marginBottom="56dp"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         android:textSize="48sp"
         app:layout_constraintBottom_toTopOf="@+id/supervisorLabel"
-        app:layout_constraintStart_toEndOf="@+id/profile_photo"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/guideline2"
         tools:text="Extension" />
 
     <TextView
@@ -88,7 +94,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:layout_marginEnd="120dp"
         android:layout_marginBottom="72dp"
         android:paddingTop="8dp"
         android:text="@string/department_label"
@@ -96,6 +101,8 @@
         android:textSize="34sp"
         app:layout_constraintBottom_toTopOf="@+id/department"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.518"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0" />
 
@@ -103,11 +110,13 @@
         android:id="@+id/department"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="128dp"
+        android:layout_marginBottom="52dp"
         android:textAppearance="@style/TextAppearance.AppCompat.Display2"
         android:textSize="48sp"
         app:layout_constraintBottom_toTopOf="@+id/directReportsLabel"
-        tools:layout_editor_absoluteX="879dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.578"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
         tools:text="Department name" />
 
     <TextView
@@ -121,7 +130,9 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         android:textSize="34sp"
         app:layout_constraintBottom_toTopOf="@+id/supervisor"
-        app:layout_constraintStart_toEndOf="@+id/profile_photo" />
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/guideline2" />
 
     <TextView
         android:id="@+id/supervisor"
@@ -132,28 +143,30 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         android:textSize="48sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/profile_photo"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/guideline2"
         tools:text="Supervisor\'s Name" />
 
     <TextView
         android:id="@+id/directReportsLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="56dp"
+        android:layout_marginBottom="44dp"
         android:paddingTop="8dp"
         android:text="@string/direct_reports"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         android:textSize="34sp"
         app:layout_constraintBottom_toTopOf="@+id/directReportsRecyclerView"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.485"
         app:layout_constraintStart_toStartOf="@+id/guideline" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/directReportsRecyclerView"
-        android:layout_width="300dp"
-        android:layout_height="300dp"
-        android:layout_marginEnd="48dp"
-        android:layout_marginBottom="56dp"
+        android:layout_width="335dp"
+        android:layout_height="358dp"
+        android:layout_marginBottom="28dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/guideline" />
